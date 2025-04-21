@@ -182,7 +182,7 @@ const projects: ProjectType[] = [
             }
         ],
         image: notepad,
-        source_code_link: "https://github.com/TropinoneH/QtNotepad"
+        source_code_link: "https://github.com/eniverz/QtNotepad"
     },
     {
         name: "zsh-trashz",
@@ -198,7 +198,7 @@ const projects: ProjectType[] = [
             }
         ],
         image: trash,
-        source_code_link: "https://github.com/TropinoneH/zsh-trashz"
+        source_code_link: "https://github.com/eniverz/zsh-trashz"
     }
 ]
 

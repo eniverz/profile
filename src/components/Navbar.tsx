@@ -19,7 +19,7 @@ const Navbar = () => {
                 >
                     <img src={logo} alt={"logo"} className={"h-9 w-9 object-contain"} />
                     <p className={"text-white text-[18px] font-bold cursor-pointer flex"}>
-                        Tropinone<span className={"sm:block hidden"}>&nbsp;</span>
+                        Eniverz<span className={"sm:block hidden"}>&nbsp;</span>
                     </p>
                 </Link>
                 <ul className={"list-none hidden sm:flex flex-row gap-10"}>
@@ -33,7 +33,7 @@ const Navbar = () => {
                         </li>
                     ))}
                     <li className="text-secondary hover:text-cyan-200 text-[18px] font-medium cursor-pointer">
-                        <a href="https://TropinoneH.github.io/profile/resume.pdf">Resume</a>
+                        <a href="https://eniverz.github.io/profile/resume.pdf">Resume</a>
                     </li>
                 </ul>
                 <div className={"sm:hidden flex flex-1 justify-end items-center"}>
