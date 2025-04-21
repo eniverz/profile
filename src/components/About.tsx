@@ -39,8 +39,8 @@ const NaiveAbout = () => {
             >
                 I am currently an undergraduate student at ShanghaiTech University, proficient in a variety of
                 programming languages including C/C++, Python, C#, Java, JavaScript, TypeScript, and Rust. My expertise
-                extends to utilizing various frameworks such as Qt, FastAPI, Django, WinForms, Spring Boot, Vue.js,
-                React, and Tauri. My current focus lies in the domains of computer vision and machine learning. With a
+                extends to utilizing various frameworks such as Qt, MuJoCo, FastAPI, Django, WinForms, Spring Boot, Vue.js,
+                React, and Tauri. My current focus lies in the domains of embodied AI and reinforcement learning. With a
                 rapid learning pace and a strong aptitude for collaborative work, I am eager to contribute to innovative
                 projects and tackle challenging problems in the field.
             </motion.p>

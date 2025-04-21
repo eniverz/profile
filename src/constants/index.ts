@@ -8,6 +8,7 @@ import {
     git,
     html,
     javascript,
+    mobile,
     mongodb,
     nodejs,
     notepad,
@@ -46,10 +47,10 @@ const services = [
         title: "Python Developer",
         icon: backend
     },
-    // {
-    // title: "React Native Developer",
-    // icon: mobile
-    // },
+    {
+        title: "Embodied Engineer",
+        icon: mobile
+    },
     {
         title: "Content Creator",
         icon: creator
