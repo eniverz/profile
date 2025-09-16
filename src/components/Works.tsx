@@ -9,7 +9,7 @@ import { ProjectType } from "../model"
 
 const ProjectCard = ({ project, index }: { project: ProjectType; index: number }) => (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-        <Tilt className={"bg-tertiary p-5 rounded-2xl sm:w-[300px] w-full"}>
+        <Tilt className={"bg-tertiary p-5 rounded-2xl sm:w-[300px] w-full h-full flex flex-wrap"}>
             <div className={"relative w-full h-[230px]"}>
                 <img src={project.image} alt={project.name} className={"w-full h-full object-contain rounded-2xl"} />
                 <div className={"absolute inset-0 flex justify-end m-3 card-img_hover"}>
@@ -31,7 +31,7 @@ const ProjectCard = ({ project, index }: { project: ProjectType; index: number }
 
             <div className={"mt-4 flex flex-wrap gap-2"}>
                 {project.tags.map((tag) => (
-                    <p key={tag.name} className={`text-[q4px] ${tag.color}`}>
+                    <p key={tag.name} className={`text-[14px] ${tag.color}`}>
                         #{tag.name}
                     </p>
                 ))}

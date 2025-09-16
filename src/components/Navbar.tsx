@@ -1,13 +1,24 @@
 import styles from "../styles.ts"
 import { Link } from "react-router-dom"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { close, logo, menu } from "../assets"
 import { navLinks } from "../constants"
 const Navbar = () => {
     const [activate, setActivate] = useState("")
     const [toggle, setToggle] = useState(false)
+    const [scrolled, setScrolled] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > window.innerHeight)
+        }
+
+        window.addEventListener("scroll", handleScroll)
+
+        return () => window.removeEventListener("scroll", handleScroll)
+    }, [])
     return (
-        <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20`}>
+        <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-opacity-85" : "bg-opacity-0"} bg-primary`}>
             <div className={"w-full flex justify-between items-center max-w-7xl mx-auto"}>
                 <Link
                     to={"/"}
