@@ -153,7 +153,7 @@ const experiences: ExperienceType[] = [
         company_name: "Lumiani, Elan, 4DVLab",
         icon: shanghaitech,
         iconBg: "#383E56",
-        date: "Jun 2023 - Jul 2024",
+        date: "Jun 2023 - Jul 2024, Jul 2024 - Feb 2025, Feb 2025 - Present",
         points: [
             "Develop Plugins of Stable Diffusion",
             "Conducting Research on 3D Generation, Motion Understanding, and Embodied AI"
