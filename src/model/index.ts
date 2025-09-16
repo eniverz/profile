@@ -20,4 +20,5 @@ export interface PublishType {
     journal?: string,
     arxiv: string,
     authors: string[],
+    teaser: string,
 }

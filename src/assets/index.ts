@@ -7,6 +7,9 @@ import github from "./github.png"
 import menu from "./menu.svg"
 import close from "./close.svg"
 
+import sia from "./publish/SiA_teaser.png"
+import mojito from "./publish/Mojito_teaser.png"
+
 import css from "./tech/css.png"
 import docker from "./tech/docker.png"
 import figma from "./tech/figma.png"
@@ -37,6 +40,8 @@ export {
     github,
     menu,
     close,
+    sia,
+    mojito,
     css,
     docker,
     figma,

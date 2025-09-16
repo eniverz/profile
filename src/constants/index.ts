@@ -16,6 +16,8 @@ import {
     reactjs,
     redux,
     shanghaitech,
+    sia,
+    mojito,
     trash,
     tailwind,
     threejs,
@@ -30,6 +32,14 @@ export const navLinks = [
         title: "About"
     },
     {
+        id: "experience",
+        title: "Experience"
+    },
+    {
+        id: "publish",
+        title: "Publications"
+    },
+    {
         id: "work",
         title: "Work"
     },
@@ -39,7 +49,8 @@ export const navLinks = [
     }
 ]
 
-const about = "I am currently an undergraduate student at ShanghaiTech University, proficient in a variety of programming languages including C/C++, Python, C#, Java, JavaScript, TypeScript, and Rust. My expertise extends to utilizing various frameworks such as Qt, MuJoCo, FastAPI, Django, WinForms, Spring Boot, Vue.js, React, and Tauri. My current focus lies in the domains of embodied AI and reinforcement learning. With a rapid learning pace and a strong aptitude for collaborative work, I am eager to contribute to innovative projects and tackle challenging problems in the field."
+const about =
+    "I am currently an undergraduate student at ShanghaiTech University, proficient in a variety of programming languages including C/C++, Python, C#, Java, JavaScript, TypeScript, and Rust. My expertise extends to utilizing various frameworks such as Qt, MuJoCo, FastAPI, Django, WinForms, Spring Boot, Vue.js, React, and Tauri. My current focus lies in the domains of embodied AI and reinforcement learning. With a rapid learning pace and a strong aptitude for collaborative work, I am eager to contribute to innovative projects and tackle challenging problems in the field."
 
 const services = [
     {
@@ -138,8 +149,11 @@ const experiences: ExperienceType[] = [
         icon: shanghaitech,
         iconBg: "#383E56",
         date: "Jun 2023 - Jul 2024",
-        points: ["Develop Plugins of Stable Diffusion", "Conducting Research on 3D Generation, Motion Understanding, and Embodied AI"]
-    },
+        points: [
+            "Develop Plugins of Stable Diffusion",
+            "Conducting Research on 3D Generation, Motion Understanding, and Embodied AI"
+        ]
+    }
 ]
 
 const publishes: PublishType[] = [
@@ -147,12 +161,23 @@ const publishes: PublishType[] = [
         title: "Sophia-in-Audition: Virtual Production with a Robot Performer",
         journal: "ACM MultiMedia 2024",
         arxiv: "2402.06978",
-        authors: ["Taotao Zhou", "Teng Xu", "Dong Zhang", "Yuyang Jiao", "Peijun Xu", "Yaoyu He", "Lan Xu", "Jingyi Yu"]
+        authors: [
+            "Taotao Zhou",
+            "Teng Xu",
+            "Dong Zhang",
+            "Yuyang Jiao",
+            "Peijun Xu",
+            "Yaoyu He",
+            "Lan Xu",
+            "Jingyi Yu"
+        ],
+        teaser: sia
     },
     {
         title: "Mojito: LLM-Aided Motion Instructor with Jitter-Reduced Inertial Tokens",
         arxiv: "2502.16175",
-        authors: ["Ziwei Shan", "Yaoyu He", "Chengfeng Zhao", "Jiashen Du", "Jingyan Zhang", "Jingyi Yu", "Lan Xu"]
+        authors: ["Ziwei Shan", "Yaoyu He", "Chengfeng Zhao", "Jiashen Du", "Jingyan Zhang", "Jingyi Yu", "Lan Xu"],
+        teaser: mojito
     }
 ]
 
@@ -178,7 +203,7 @@ const projects: ProjectType[] = [
         source_code_link: "https://github.com/eniverz/CS181FinalProject"
     },
     {
-        name: "coursebench",
+        name: "CourseBench",
         description: "a website for students to search and review courses",
         tags: [
             {
