@@ -26,6 +26,11 @@ import {
 } from "../assets/index.ts"
 import { ExperienceType, ProjectType, PublishType } from "../model"
 
+const userInfo = {
+    username: "Eniverz",
+    intro: "I develop Embodied AI/Computer Vision program, web applications and games."
+}
+
 export const navLinks = [
     {
         id: "about",
@@ -260,4 +265,4 @@ const contact = {
     mail: "heyy2022@shanghaitech.edu.cn"
 }
 
-export { about, services, technologies, experiences, publishes, projects, contact }
+export { userInfo, about, services, technologies, experiences, publishes, projects, contact }

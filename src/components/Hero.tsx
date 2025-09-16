@@ -1,6 +1,7 @@
 import styles from "../styles.ts"
 import { ComputersCanvas } from "./canvas"
 import { motion } from "framer-motion"
+import { userInfo } from "../constants"
 
 const Hero = () => {
     return (
@@ -15,11 +16,9 @@ const Hero = () => {
                 </div>
                 <div>
                     <h1 className={`${styles.heroHeadText} text-white`}>
-                        Hi, I'm <span className={"text-[#915eff]"}>Eniverz</span>
+                        Hi, I'm <span className={"text-[#915eff]"}>{userInfo.username}</span>
                     </h1>
-                    <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-                        I develop Embodied AI/Computer Vision program, web applications and games.
-                    </p>
+                    <p className={`${styles.heroSubText} mt-2 text-white-100`}>{userInfo.intro}</p>
                 </div>
             </div>
 
