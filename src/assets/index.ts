@@ -23,6 +23,7 @@ import threejs from "./tech/threejs.svg"
 
 import shanghaitech from "./company/shanghaitech.png"
 
+import chineseChecker from "./work/chinese-checker.jpg"
 import courseBench from "./work/course_bench.svg"
 import notepad from "./work/QtNotePad.ico"
 import trash from "./work/trash.png"
@@ -50,6 +51,7 @@ export {
     typescript,
     threejs,
     shanghaitech,
+    chineseChecker,
     courseBench,
     notepad,
     trash

@@ -1,5 +1,6 @@
 import {
     backend,
+    chineseChecker,
     courseBench,
     creator,
     css,
@@ -21,7 +22,7 @@ import {
     typescript,
     web
 } from "../assets/index.ts"
-import { ExperienceType, ProjectType, TestimonialType } from "../model"
+import { ExperienceType, ProjectType, PublishType } from "../model"
 
 export const navLinks = [
     {
@@ -37,6 +38,8 @@ export const navLinks = [
         title: "Contact"
     }
 ]
+
+const about = "I am currently an undergraduate student at ShanghaiTech University, proficient in a variety of programming languages including C/C++, Python, C#, Java, JavaScript, TypeScript, and Rust. My expertise extends to utilizing various frameworks such as Qt, MuJoCo, FastAPI, Django, WinForms, Spring Boot, Vue.js, React, and Tauri. My current focus lies in the domains of embodied AI and reinforcement learning. With a rapid learning pace and a strong aptitude for collaborative work, I am eager to contribute to innovative projects and tackle challenging problems in the field."
 
 const services = [
     {
@@ -119,36 +122,61 @@ const experiences: ExperienceType[] = [
         icon: shanghaitech,
         iconBg: "#383E56",
         date: "Sep 2022 - Present",
-        points: ["Studying in Shanghaitech", "A member of GeekPie", "Study in the lab"]
-    }
+        points: ["Studying in Shanghaitech", "major GPA: 3.79/4"]
+    },
+    {
+        title: "A Member of Geekpie",
+        company_name: "Geekpie",
+        icon: shanghaitech,
+        iconBg: "#E6DEDD",
+        date: "Nov 2022 - Present",
+        points: ["Web Development: CourseBench"]
+    },
+    {
+        title: "Conducting Research in Lab",
+        company_name: "Lumiani, Elan, 4DVLab",
+        icon: shanghaitech,
+        iconBg: "#383E56",
+        date: "Jun 2023 - Jul 2024",
+        points: ["Develop Plugins of Stable Diffusion", "Conducting Research on 3D Generation, Motion Understanding, and Embodied AI"]
+    },
 ]
 
-const testimonials: TestimonialType[] = [
+const publishes: PublishType[] = [
     {
-        testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg"
+        title: "Sophia-in-Audition: Virtual Production with a Robot Performer",
+        journal: "ACM MultiMedia 2024",
+        arxiv: "2402.06978",
+        authors: ["Taotao Zhou", "Teng Xu", "Dong Zhang", "Yuyang Jiao", "Peijun Xu", "Yaoyu He", "Lan Xu", "Jingyi Yu"]
     },
     {
-        testimonial: "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg"
-    },
-    {
-        testimonial: "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg"
+        title: "Mojito: LLM-Aided Motion Instructor with Jitter-Reduced Inertial Tokens",
+        arxiv: "2502.16175",
+        authors: ["Ziwei Shan", "Yaoyu He", "Chengfeng Zhao", "Jiashen Du", "Jingyan Zhang", "Jingyi Yu", "Lan Xu"]
     }
 ]
 
 const projects: ProjectType[] = [
+    {
+        name: "Chinese Checker AI Agent",
+        description: "an AI agent to play Chinese Checker using RL and DLRL",
+        tags: [
+            {
+                name: "Reinforcement Learning",
+                color: "blue-text-gradient"
+            },
+            {
+                name: "Deep Learning",
+                color: "pink-text-gradient"
+            },
+            {
+                name: "react",
+                color: "green-text-gradient"
+            }
+        ],
+        image: chineseChecker,
+        source_code_link: "https://github.com/eniverz/CS181FinalProject"
+    },
     {
         name: "coursebench",
         description: "a website for students to search and review courses",
@@ -203,4 +231,8 @@ const projects: ProjectType[] = [
     }
 ]
 
-export { services, technologies, experiences, testimonials, projects }
+const contact = {
+    mail: "heyy2022@shanghaitech.edu.cn"
+}
+
+export { about, services, technologies, experiences, publishes, projects, contact }

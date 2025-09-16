@@ -15,10 +15,9 @@ export interface ProjectType {
     source_code_link: string
 }
 
-export interface TestimonialType {
-    testimonial: string
-    name: string
-    designation: string
-    company: string
-    image: string
+export interface PublishType {
+    title: string,
+    journal?: string,
+    arxiv: string,
+    authors: string[],
 }

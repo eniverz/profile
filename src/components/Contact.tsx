@@ -2,6 +2,7 @@ import SectionWrapper from "../hoc/SectionWrapper.tsx"
 import { motion } from "framer-motion"
 import { slideIn } from "../utils/motion.ts"
 import styles from "../styles.ts"
+import { contact } from "../constants"
 import { EarthCanvas } from "./canvas"
 
 const NaiveContact = () => {
@@ -15,7 +16,7 @@ const NaiveContact = () => {
                 <h3 className={styles.sectionHeadText}>Contact.</h3>
                 <div className={"mt-12 flex flex-col gap-8 h-96"}>
                     contact me at <br />
-                    <a href={"mailto:heyy2022@shanghaitech.edu.cn"} className={"text-blue-800 hover:underline"}>heyy2022@shanghaitech.edu.cn</a>
+                    <a href={`mailto:${contact.mail}`} className={"text-blue-800 hover:underline"}>{contact.mail}</a>
                 </div>
             </motion.div>
 
