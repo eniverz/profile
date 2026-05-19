@@ -35,7 +35,18 @@ const PublishCard = ({ publish, index }: { publish: PublishType; index: number }
                     })}
                 </p>
                 <p className="mt-2 text-secondary text-[16px] font-medium">{publish.journal}</p>
-                <div className="mt-4">
+                <div className="mt-4 flex flex-wrap gap-4 items-center">
+                    {publish.project_link && (
+                        <a
+                            href={publish.project_link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-400 hover:underline text-[16px] font-bold"
+                        >
+                            [Project Page]
+                        </a>
+                    )}
+
                     <a
                         href={`https://arxiv.org/abs/${publish.arxiv}`}
                         target="_blank"
@@ -44,6 +55,17 @@ const PublishCard = ({ publish, index }: { publish: PublishType; index: number }
                     >
                         [Paper]
                     </a>
+
+                    {publish.code_link && (
+                        <a
+                            href={publish.code_link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-green-400 hover:underline text-[16px] font-bold"
+                        >
+                            [Code]
+                        </a>
+                    )}
                 </div>
             </div>
         </div>

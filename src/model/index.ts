@@ -21,4 +21,6 @@ export interface PublishType {
     arxiv: string,
     authors: string[],
     teaser: string,
+    project_link?: string,
+    code_link?: string,
 }

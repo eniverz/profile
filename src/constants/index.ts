@@ -177,13 +177,16 @@ const publishes: PublishType[] = [
             "Lan Xu",
             "Jingyi Yu"
         ],
-        teaser: sia
+        teaser: sia,
+        project_link: "https://miaoing.github.io/SiA/",
     },
     {
         title: "Mojito: LLM-Aided Motion Instructor with Jitter-Reduced Inertial Tokens",
         arxiv: "2502.16175",
         authors: ["Ziwei Shan*", "Yaoyu He*", "Chengfeng Zhao*", "Jiashen Du", "Jingyan Zhang", "Jingyi Yu", "Lan Xu"],
-        teaser: mojito
+        teaser: mojito,
+        project_link: "https://koyui.github.io/mojito/",
+        code_link: "https://github.com/koyui/mojito"
     },
     {
         title: "From Noise to Intent: Anchoring Generative VLA Policies with Residual Bridges",
@@ -199,7 +202,9 @@ const publishes: PublishType[] = [
             "Xinge Zhu",
             "Yuexin Ma"
         ],
-        teaser: resvla
+        teaser: resvla,
+        project_link: "https://res-vla.github.io/ResVLA/",
+        code_link: "https://github.com/4DVLab/ResVLA"
     }
 ]
 
