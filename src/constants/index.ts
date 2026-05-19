@@ -18,6 +18,7 @@ import {
     shanghaitech,
     sia,
     mojito,
+    resvla,
     trash,
     tailwind,
     threejs,
@@ -167,9 +168,9 @@ const publishes: PublishType[] = [
         journal: "ACM MultiMedia 2024",
         arxiv: "2402.06978",
         authors: [
-            "Taotao Zhou",
-            "Teng Xu",
-            "Dong Zhang",
+            "Taotao Zhou*",
+            "Teng Xu*",
+            "Dong Zhang*",
             "Yuyang Jiao",
             "Peijun Xu",
             "Yaoyu He",
@@ -181,8 +182,24 @@ const publishes: PublishType[] = [
     {
         title: "Mojito: LLM-Aided Motion Instructor with Jitter-Reduced Inertial Tokens",
         arxiv: "2502.16175",
-        authors: ["Ziwei Shan", "Yaoyu He", "Chengfeng Zhao", "Jiashen Du", "Jingyan Zhang", "Jingyi Yu", "Lan Xu"],
+        authors: ["Ziwei Shan*", "Yaoyu He*", "Chengfeng Zhao*", "Jiashen Du", "Jingyan Zhang", "Jingyi Yu", "Lan Xu"],
         teaser: mojito
+    },
+    {
+        title: "From Noise to Intent: Anchoring Generative VLA Policies with Residual Bridges",
+        // journal: "ICML 2026",
+        arxiv: "2604.21391",
+        authors: [
+            "Yiming Zhong*",
+            "Yaoyu He*",
+            "Zemin Yang*",
+            "Pengfei Tian",
+            "Yifan Huang",
+            "Qingqiu Huang",
+            "Xinge Zhu",
+            "Yuexin Ma"
+        ],
+        teaser: resvla
     }
 ]
 

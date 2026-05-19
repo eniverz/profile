@@ -18,7 +18,22 @@ const PublishCard = ({ publish, index }: { publish: PublishType; index: number }
 
             <div className="flex flex-col justify-center">
                 <h3 className="text-white font-bold text-[22px]">{publish.title}</h3>
-                <p className="mt-2 text-secondary text-[14px]">{publish.authors.join(", ")}</p>
+                <p className="mt-2 text-secondary text-[14px]">
+                    {publish.authors.map((author, idx) => {
+                        const trimmed = author.trim()
+                        const hasStar = trimmed.endsWith("*")
+                        const name = hasStar ? trimmed.slice(0, -1).trim() : trimmed
+                        const isMe = name === "Yaoyu He"
+
+                        return (
+                            <span key={idx}>
+                                {isMe ? <strong>{name}</strong> : name}
+                                {hasStar ? "*" : ""}
+                                {idx < publish.authors.length - 1 ? ", " : ""}
+                            </span>
+                        )
+                    })}
+                </p>
                 <p className="mt-2 text-secondary text-[16px] font-medium">{publish.journal}</p>
                 <div className="mt-4">
                     <a

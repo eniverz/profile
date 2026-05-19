@@ -9,6 +9,7 @@ import close from "./close.svg"
 
 import sia from "./publish/SiA_teaser.png"
 import mojito from "./publish/Mojito_teaser.png"
+import resvla from "./publish/ResVLA_pipeline.png"
 
 import css from "./tech/css.png"
 import docker from "./tech/docker.png"
@@ -42,6 +43,7 @@ export {
     close,
     sia,
     mojito,
+    resvla,
     css,
     docker,
     figma,
