@@ -1,21 +1,24 @@
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
-import { Suspense, useEffect, useState } from "react"
+import { Suspense, useSyncExternalStore } from "react"
 import CanvasLoader from "../CanvasLoader.tsx"
 
+const mobileMediaQuery = "(max-width: 500px)"
+
+const getMobileSnapshot = () => window.matchMedia(mobileMediaQuery).matches
+
+const subscribeMobileMediaQuery = (onStoreChange: () => void) => {
+    const mediaQuery = window.matchMedia(mobileMediaQuery)
+    mediaQuery.addEventListener("change", onStoreChange)
+
+    return () => {
+        mediaQuery.removeEventListener("change", onStoreChange)
+    }
+}
+
 const ComputersCanvas = () => {
-    const [isMobile, setIsMobile] = useState(false)
-    useEffect(() => {
-        const mediaQuery = window.matchMedia("(max-width: 500px)")
-        setIsMobile(mediaQuery.matches)
-        const handleMediaQueryChange = (e: MediaQueryListEvent) => {
-            setIsMobile(e.matches)
-        }
-        mediaQuery.addEventListener("change", handleMediaQueryChange)
-        return () => {
-            mediaQuery.removeEventListener("change", handleMediaQueryChange)
-        }
-    }, [])
+    const isMobile = useSyncExternalStore(subscribeMobileMediaQuery, getMobileSnapshot, () => false)
+
     return (
         <Canvas
             frameloop={"demand"}

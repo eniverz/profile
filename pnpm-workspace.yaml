@@ -1,0 +1,5 @@
+allowBuilds:
+  esbuild: true
+  react-vertical-timeline-component: true
+minimumReleaseAgeExclude:
+  - eslint-plugin-react-refresh@0.5.3
