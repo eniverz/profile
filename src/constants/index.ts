@@ -56,20 +56,20 @@ export const navLinks = [
 ]
 
 const about =
-    "I am currently an undergraduate student at ShanghaiTech University, proficient in a variety of programming languages including C/C++, Python, C#, Java, JavaScript, TypeScript, and Rust. My expertise extends to utilizing various frameworks such as Qt, MuJoCo, FastAPI, Django, WinForms, Spring Boot, Vue.js, React, and Tauri. My current focus lies in the domains of embodied AI and reinforcement learning. With a rapid learning pace and a strong aptitude for collaborative work, I am eager to contribute to innovative projects and tackle challenging problems in the field."
+    "I am currently an Ph.D. student at ShanghaiTech University, proficient in a variety of programming languages including C/C++, Python, C#, Java, JavaScript, TypeScript, and Rust. My expertise extends to utilizing various frameworks such as Qt, MuJoCo, FastAPI, Django, WinForms, Spring Boot, Vue.js, React, and Tauri. My current focus lies in the domains of Embodied AI and World Models. With a rapid learning pace and a strong aptitude for collaborative work, I am eager to contribute to innovative projects and tackle challenging problems in the field."
 
 const services = [
-    {
-        title: "Web Developer",
-        icon: web
-    },
     {
         title: "Python Developer",
         icon: backend
     },
     {
-        title: "Embodied Engineer",
+        title: "Researcher",
         icon: mobile
+    },
+    {
+        title: "Web Developer",
+        icon: web
     },
     {
         title: "Content Creator",
@@ -138,15 +138,23 @@ const experiences: ExperienceType[] = [
         company_name: "Shanghaitech",
         icon: shanghaitech,
         iconBg: "#383E56",
-        date: "Sep 2022 - Present",
+        date: "Sep 2022 - July 2026",
         points: ["Studying in Shanghaitech", "major GPA: 3.79/4"]
+    },
+    {
+        title: "Ph.D. Student in Shanghaitech",
+        company_name: "Shanghaitech",
+        icon: shanghaitech,
+        iconBg: "#383E56",
+        date: "Sep 2026 - Present",
+        points: ["Conducting Research in Embodied AI and World Models"]
     },
     {
         title: "A Member of Geekpie",
         company_name: "Geekpie",
         icon: shanghaitech,
         iconBg: "#E6DEDD",
-        date: "Nov 2022 - Present",
+        date: "Nov 2022 - July 2026",
         points: ["Web Development: CourseBench"]
     },
     {
